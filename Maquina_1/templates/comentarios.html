@@ -1,0 +1,41 @@
+{% autoescape false %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/comentarios.css') }}">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Lab Preparacion Dia 1</title>
+        
+    </head>
+    <body>
+
+        <h3>Comentarios</h3>
+        <div class="container">
+            <form method="POST" action="{{ url_for('sendit') }}">
+                {% for comentario in comentarios %}
+                    <div class="comentario">
+                        <p id="autor"> <strong>{{ comentario[0] }} </strong></p>
+                        
+                        <p id="contenido"> {{ comentario[1] }} </p>
+                    </div>
+                    <br>
+                {% endfor %}
+                
+                <div>
+                    <label>Introduce tu nombre</label>
+                    <input type="text" placeholder="Autor" name="autor">
+                </div>
+                <div>
+                    <label>Introduce tu comentario</label>
+                    <input type="textarea" width="50" height="50" name="contenido" placeholder="Comentario">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        
+        </div>
+    </body>
+</html>
+{% endautoescape %}

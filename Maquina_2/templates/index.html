@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos</title>
+</head>
+<body>
+    <h1>Lista de Comandos</h1>
+
+    <form method="post">
+        <label for="filtro_id">Filtrar por ID:</label>
+        <input type="text" id="filtro_id" name="filtro_id" pattern="\d+" title="Ingresa solo números">
+        <button type="submit">Filtrar</button>
+    </form>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Comando</th>
+                <th>Ejecución</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for resultado in resultados %}
+                <tr>
+                    <td>{{ resultado[0] }}</td>
+                    <td>{{ resultado[1] }}</td>
+                    <td>{{ resultado[2] | e }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
