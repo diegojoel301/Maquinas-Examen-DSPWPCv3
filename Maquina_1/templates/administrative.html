@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/login.css') }}">
+        <title>ping</title>
+    </head>
+    <body>
+        <form action="{{ url_for('ping') }}" method="post">
+            
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Introduce una direccion IP:</b></label>
+            <input type="text" placeholder="IP:" name="ip" required>
+                
+            <button type="submit">Ping</button>
+            
+        </div>
+
+        
+        </form>
+    </body>
+</html>
