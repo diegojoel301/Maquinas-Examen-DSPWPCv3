@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /cr3d3nt14ls
+Disallow: /edit_perfil

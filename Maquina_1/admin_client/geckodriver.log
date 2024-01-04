@@ -1,0 +1,5 @@
+update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/gimp/2.0/help /usr/share/gimp/2.0/help none bind,ro 0 0): cannot open directory "/var/lib": permission denied
+update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/xubuntu-docs /usr/share/xubuntu-docs none bind,ro 0 0): cannot open directory "/var/lib": permission denied
+1702098306069	geckodriver	INFO	Listening on 127.0.0.1:52283
+1702098322687	geckodriver	INFO	Listening on 127.0.0.1:60553
+1702098870197	geckodriver	INFO	Listening on 127.0.0.1:45021

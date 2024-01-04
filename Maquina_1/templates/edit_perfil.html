@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+</head>
+<body>
+    <h1>Editar Perfil</h1>
+
+    <form method="POST" action="{{ url_for('edit_perfil') }}">
+        <label for="nombre">Nuevo Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>
