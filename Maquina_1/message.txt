@@ -1,2 +1,0 @@
-Hola Bob las credenciales tuyas al servidor son:
-bob:euiwidnxv2625e9d7c9=2623
